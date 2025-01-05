@@ -19,7 +19,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://jmp.sh/aV3sqRom' title='Video Walkthrough' width='' alt='Video Walkthrough'/>
+<img src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExamh6Nm0ydnQxbmtvNzFtY2ZxZHk3ZGNja2p3dTh3YzBxeXkxenNyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xjNZr3hK0nHAi34Cbb/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' width = "600"/>
 
 GIF created with ezgif.com   
 
