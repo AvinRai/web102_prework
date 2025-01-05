@@ -138,8 +138,6 @@ const numUnfundedGames = GAMES_JSON.reduce((acc, game) => {
     return acc + (game.pledged < game.goal ? 1 : 0);
 }, 0);
 
-console.log(numUnfundedGames);
-
 // create a string that explains the number of unfunded games using the ternary operator
 const displayStr = `A total of $${totalRaised.toLocaleString("en-US")} has been raised for ${GAMES_JSON.length} games. 
 Currently, ${numUnfundedGames == 1 ? numUnfundedGames + " game": numUnfundedGames + ' games'} remain unfunded. 
@@ -163,7 +161,14 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+let [firstGame, secondGame, ...rest] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const firstGameElement = document.createElement("p");
+firstGameElement.innerHTML = firstGame.name;
+firstGameContainer.append(firstGameElement);
 
 // do the same for the runner up item
+const secondGameElement = document.createElement("p");
+secondGameElement.innerHTML = secondGame.name;
+secondGameContainer.append(secondGameElement);
